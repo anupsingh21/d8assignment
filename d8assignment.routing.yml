@@ -1,0 +1,13 @@
+d8assignment.json_api:
+  path: '/page_json/{siteapikey}/{node}'
+  defaults:
+    _controller: '\Drupal\d8assignment\Controller\JsonApiController::renderApi'
+    _title: 'Page JSON api'
+  methods:  [GET]
+  siteapikey: 'key'
+  requirements:
+    _custom_access: '\Drupal\d8assignment\Controller\JsonApiController::access'
+  options:
+    parameters:
+      node:
+        type: entity:node

@@ -1,0 +1,6 @@
+name: Drupal 8 Assignment
+type: module
+description: Drupal 8 Assignment.
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - drupal:serialization
